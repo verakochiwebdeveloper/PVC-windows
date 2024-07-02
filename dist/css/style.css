@@ -1,3 +1,7 @@
+button {
+  background: none;
+  border: none;
+}
 html {
   height: 100%;
 }
@@ -9,6 +13,7 @@ body {
   font-weight: 300;
   color: #4f686e;
 }
+
 h2 span {
   font-family: "NeoSansCyr-Medium", sans-serif;
 }
@@ -223,6 +228,8 @@ input.error {
 }
 .button {
   padding-top: 27px;
+  background: none;
+  border: none;
 }
 .navbar-order {
   float: right;
