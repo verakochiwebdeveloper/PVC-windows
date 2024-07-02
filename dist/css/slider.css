@@ -1,0 +1,31 @@
+.slider {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider-service {
+    width: 30%;
+}
+
+.slides {
+    display: flex;
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+
+.slide-service {
+    flex: 0 0 60% 
+}
+
+@media (min-width: 576px) {
+    .slide {
+        flex: 0 0 calc(100% / 3);
+    }
+}
+
+button {
+    cursor: pointer;
+}
