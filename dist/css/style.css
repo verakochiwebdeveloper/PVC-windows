@@ -953,6 +953,13 @@ p.services-image_mobile {
 #map iframe {
   border: 0 !important;
 }
+
+.count {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+
 .countdown {
   text-align: center;
   background-color: #ededed;
