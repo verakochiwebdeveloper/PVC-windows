@@ -4,6 +4,7 @@ import slider from './modules/slider';
 import sliderServices from './modules/sliderServices';
 import discountsTime from './modules/discountsTime'; 
 import form from './modules/form'; 
+import sertifecations from './modules/sertifecations'; 
 
 
 popup();
@@ -12,3 +13,4 @@ slider();
 sliderServices();
 discountsTime()
 form()
+sertifecations()
