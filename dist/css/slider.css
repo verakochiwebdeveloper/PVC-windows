@@ -1,12 +1,10 @@
 .slider {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
 }
 
-.slider-service {
-    width: 30%;
-}
+
 
 .slides {
     display: flex;
@@ -16,8 +14,8 @@
     flex: 0 0 100%;
 }
 
-.slide-service {
-    flex: 0 0 60% 
+.slide-d {
+    flex: 0 0 50%;
 }
 
 @media (min-width: 576px) {

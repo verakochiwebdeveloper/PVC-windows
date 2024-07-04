@@ -1,6 +1,6 @@
 const sliderServices = () => {
     document.addEventListener('DOMContentLoaded', function() {
-        const slides = document.querySelectorAll('.slide-service');
+        const slides = document.querySelectorAll('.slide-d');
         let currentSlide = 0;
     
         function showSlide(index) {
@@ -14,12 +14,12 @@ const sliderServices = () => {
         }
     
         function nextSlide() {
-            currentSlide = (currentSlide + 1) % (slides.length - 1);
+            currentSlide = (currentSlide + 1) % (slides.length - 2);
             showSlide(currentSlide);
         }
     
         function prevSlide() {
-            currentSlide = (currentSlide - 1 + slides.length - 1) % (slides.length - 1);
+            currentSlide = (currentSlide - 1 + slides.length - 2) % (slides.length - 2);
             showSlide(currentSlide);
         }
     
