@@ -1,5 +1,6 @@
 const sertifecations = () => {
-  document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("DOMContentLoaded", () => {
+    // Создание модального окна
     const modal = document.createElement("div");
     modal.className = "modal";
     modal.style.display = "none";
@@ -10,27 +11,30 @@ const sertifecations = () => {
 
     const closeBtn = document.createElement("span");
     closeBtn.className = "close";
-    closeBtn.innerHTML = "&times;";
+    closeBtn.innerHTML = "X";
     modal.appendChild(closeBtn);
 
     document.body.appendChild(modal);
 
-    const certificateImages = document.querySelectorAll(
-      ".sertificate-document"
-    );
+    // Получение всех изображений сертификатов
+    const certificateImages = document.querySelectorAll(".sertificate-document");
 
-    certificateImages.forEach(function (image) {
-      image.addEventListener("click", function () {
+    // Добавление обработчика клика на каждое изображение
+    certificateImages.forEach((image) => {
+      image.addEventListener("click", (event) => {
+        event.preventDefault(); // Предотвращаем переход по ссылке
         modal.style.display = "block";
-        modalImg.src = this.href;
+        modalImg.src = image.href; // Используем href для получения URL
       });
     });
 
-    closeBtn.addEventListener("click", function () {
+    // Закрытие модального окна
+    closeBtn.addEventListener("click", () => {
       modal.style.display = "none";
     });
 
-    window.addEventListener("click", function (event) {
+    // Закрытие при клике вне изображения
+    window.addEventListener("click", (event) => {
       if (event.target === modal) {
         modal.style.display = "none";
       }

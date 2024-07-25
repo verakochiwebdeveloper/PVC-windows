@@ -15,4 +15,11 @@ sliderServices();
 discountsTime()
 form()
 sertifecations()
-calculate()
+
+
+const body = document.querySelector(".balkony");
+
+
+if (body !== null) {
+  calculate();
+}
